@@ -16,7 +16,7 @@ const Navbar = () => {
             <Link href="/option6">PHOTOS</Link>
           </div>
         </div>
-        
+       
         <Link href="/music" className="navbar-tab">MUSIC</Link>        
         <Link href="/calender" className="navbar-tab">CONCERTS</Link>
       </div>
