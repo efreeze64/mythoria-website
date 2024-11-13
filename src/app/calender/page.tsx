@@ -1,13 +1,13 @@
 import Navbar from "../../../assets/components/navbar";
 
-const About = () => {
+const Calender = () => {
     
     return (
         <>
         <Navbar />
-        <h1>About Page</h1>
+        <h1>Calender Page</h1>
         </>
     )
 }
 
-export default About;
+export default Calender;

@@ -1,13 +1,13 @@
 import Navbar from "../../../assets/components/navbar";
 
-const About = () => {
+const Contact = () => {
     
     return (
         <>
         <Navbar />
-        <h1>About Page</h1>
+        <h1>Contact Page</h1>
         </>
     )
 }
 
-export default About;
+export default Contact;
