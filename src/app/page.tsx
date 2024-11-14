@@ -1,4 +1,5 @@
-import Navbar from "../../assets/components/navbar";
+import Navbar from "../assets/components/navbar";
+import "../assets/styling/global-style.css";
 
 const Home = () => {
 
@@ -7,7 +8,6 @@ const Home = () => {
         <body>
         <Navbar />
         <h1>Home Page</h1>
-        <img src="./assets/img/mythoria.png"></img>
         </body>
     )
 }

@@ -1,4 +1,4 @@
-import Navbar from "../../../assets/components/navbar";
+import Navbar from "../../assets/components/navbar";
 
 const About = () => {
     
