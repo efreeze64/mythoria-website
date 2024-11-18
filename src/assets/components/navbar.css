@@ -6,7 +6,7 @@
   width: 100%;
   position: sticky;
   top: 0;
-  padding: 15px 0px 15px;
+  height: 125px;
 }
 
 .navbar-tabs {
@@ -22,9 +22,11 @@
   font-family: "Bebas Neue";
   font-weight: bold;
   font-size: 25px;
+  transition: all .3s ease;
 }
 
 .navbar-tab:hover, .dropbtn:hover {
+  transition: all .3s ease;
   text-decoration: underline;
   color:#af4c4c;
 }
@@ -64,6 +66,7 @@
   font-weight: bold;
   font-size: 25px;
   text-decoration: none;
+  transition: all .3s ease;
 }
 
 .dropdown-content {
@@ -83,6 +86,7 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
+  transition: all .3s ease;
 }
 
 .dropdown:hover .dropdown-content {
@@ -92,6 +96,7 @@
 .dropdown-content a:hover {
   text-decoration: underline;
   color: #af4c4c;
+  transition: all .3s ease;
 }
 
 .navbar-tab.active {

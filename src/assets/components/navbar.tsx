@@ -66,7 +66,7 @@ const Navbar = () => {
           <button className="dropbtn">BAND</button>
           <div className="dropdown-content">
             <Link href="/about" className={isActive('/about')}>ABOUT US</Link>
-            <Link href="/option5" className={isActive('/option5')}>FACTS</Link>
+            <Link href="/facts" className={isActive('/facts')}>FACTS</Link>
             <Link href="/option6" target="_blank" className={isActive('/option6')}>PHOTOS</Link>
           </div>
         </div>
