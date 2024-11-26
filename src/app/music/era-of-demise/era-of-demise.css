@@ -1,0 +1,78 @@
+.container img {
+  height: auto;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.container#upper {
+  justify-content: center;
+  width: 1000px;
+  margin-bottom: 5%;
+  height: 500px;
+}
+
+#text {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#text::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+#text::-webkit-scrollbar-thumb {
+  background: rgb(27, 27, 27);
+  border-radius: 10px;
+}
+
+#text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.open-lyrics {
+  color: orange;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.open-lyrics:hover {
+  color: #af4c4c;
+}
+
+.container#upper ul li {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container#upper ul.row {
+  display: inline;
+  flex-direction: row;
+}
+
+.container#music {
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10%;
+  flex-direction: row;
+}
+
+#music a {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: "Bebas Neue";
+  transition: all 0.5s ease;
+}
+
+#music a:hover {
+  transform: scale(1.1);
+  color: #af4c4c;
+}

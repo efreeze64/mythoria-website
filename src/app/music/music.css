@@ -1,0 +1,93 @@
+.container h1 {
+    text-align: center;
+}
+
+/*If more pictures is added, make img smaller*/
+.container img {
+    height: 500px;
+    width: auto;
+}
+
+.container#covers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    margin: 50px 0px;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.container .p {
+    font-size: 30px;
+}
+
+.container#links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+    gap: 50px;
+}
+
+.logo-box {
+    border-radius: 10px;
+    padding: 15px;
+    align-content: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.logo-box img {
+    width: 300px;
+    height: auto;      
+}
+
+.logo-box:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.logo-box#spotify:hover {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 
+        0 0 9px 4px #000000,   
+        0 0 13px 7px rgb(0, 255, 4), 
+        0 0 15px 11px rgb(0, 255, 4);
+}
+
+.logo-box#youtube:hover {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 
+        0 0 9px 4px #ffffff,   
+        0 0 13px 7px rgb(255, 0, 0), 
+        0 0 15px 11px rgb(184, 0, 0);
+}
+
+
+
+@media screen and (max-width: 800px) { 
+    .container h1 {
+        text-align: center;
+        font-size: 35px;
+        margin: 50px 0px;
+    }
+
+    .container img {
+        height: 300px;
+        width: auto;
+    }
+
+    .container#covers {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 100px;
+    }
+}

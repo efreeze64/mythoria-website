@@ -1,0 +1,14 @@
+.container#empty {
+  flex-direction: column;
+  align-items: center;
+}
+
+.container#empty p {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.container#empty img {
+  width: 250px;
+  height: auto;
+}

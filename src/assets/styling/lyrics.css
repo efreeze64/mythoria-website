@@ -1,0 +1,15 @@
+.header {
+    margin-bottom: 0px;
+    font-style: bolder;
+    color: #af4c4c;
+}
+
+.text {
+    margin-top: 5px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.text:hover {
+   font-size: 25px;
+}

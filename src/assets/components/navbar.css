@@ -7,6 +7,7 @@
   position: sticky;
   top: 0;
   height: 125px;
+  z-index: 1;
 }
 
 .navbar-tabs {
@@ -22,13 +23,14 @@
   font-family: "Bebas Neue";
   font-weight: bold;
   font-size: 25px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.navbar-tab:hover, .dropbtn:hover {
-  transition: all .3s ease;
+.navbar-tab:hover,
+.dropbtn:hover {
+  transition: all 0.3s ease;
   text-decoration: underline;
-  color:#af4c4c;
+  color: #af4c4c;
 }
 
 .navbar-tabs#left {
@@ -66,7 +68,7 @@
   font-weight: bold;
   font-size: 25px;
   text-decoration: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .dropdown-content {
@@ -86,7 +88,7 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .dropdown:hover .dropdown-content {
@@ -96,18 +98,18 @@
 .dropdown-content a:hover {
   text-decoration: underline;
   color: #af4c4c;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-tab.active {
-  background-color: #af4c4c; 
+  background-color: #af4c4c;
   color: #fff;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .dropdown-content a.active {
-  background-color: #af4c4c; 
-  color: #fff; 
+  background-color: #af4c4c;
+  color: #fff;
 }
 
 .open-modal {
@@ -122,13 +124,12 @@
 }
 
 @media screen and (max-width: 800px) {
-
   .navbar {
     display: flex;
     background-color: #1a1a1a;
     width: 100%;
     position: sticky;
-    padding: 15px 0px 15px;
+    padding: 5px 0px 5px;
   }
 
   .navbar-tabs {
@@ -140,7 +141,7 @@
     height: 50px;
     width: 50px;
     position: absolute;
-    left: 10px;
+    right: 10px;
   }
 
   .close-modal {
@@ -148,8 +149,8 @@
     height: 50px;
     width: 50px;
     position: absolute;
-    left: 15px;
-    top: 15px
+    right: 10px;
+    top: 55px;
   }
 
   .off-screen-menu {
@@ -189,7 +190,7 @@
     width: 100%;
     margin: 2% 0% 2%;
   }
-  
+
   .mobile-navbar li a {
     color: white;
     text-decoration: none;
@@ -221,11 +222,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 20px;
   }
-  
+
   .icon img {
     height: auto;
     width: 50px;
   }
-  
 }

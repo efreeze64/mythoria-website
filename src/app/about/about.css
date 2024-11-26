@@ -1,0 +1,61 @@
+.container#text-column {
+  display: flex;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.container#picture {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.picture img {
+  width: 350px;
+  transition: all 0.5s ease;
+}
+
+.picture img:hover {
+  width: 400px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .column#text-column {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .picture {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .picture img {
+    width: 150px;
+    height: auto;
+  }
+
+  .picture img:hover {
+    width: 150px;
+  }
+
+  .picture p {
+    text-align: center;
+    font-size: 100%;
+  }
+}

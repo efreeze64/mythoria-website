@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import './navbar.css';
+
 import mythoria from "../img/mythoria.png";
 import close from "../img/close_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import open from "../img/menu_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
@@ -44,7 +45,7 @@ const Navbar = () => {
           <li><Link href="/about" className={isActive('/about')}>ABOUT US</Link></li>
           <li><Link href="/music" className={isActive('/music')}> MUSIC</Link></li>
           <li><Link href="/calender" className={isActive('/calender')}>CONCERTS</Link></li>
-          <li><Link href="https://mythoria.bandcamp.com/" target='_blank'>MERCH</Link></li>
+          <li><Link href="https://mythoria.bandcamp.com/merch" target='_blank'>MERCH</Link></li>
           <li><Link href="/contact" className={isActive('/contact')}>CONTACT</Link></li>
         </ul>
         <div className="social-media">
@@ -95,7 +96,7 @@ const Navbar = () => {
             <Link href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b" target="_blank">Spotify</Link>
           </div>
         </div>
-        <Link href="https://mythoria.bandcamp.com/" className="navbar-tab" target="_blank">MERCH</Link>
+        <Link href="https://mythoria.bandcamp.com/merch" className="navbar-tab" target="_blank">MERCH</Link>
         <Link href="/contact" className={`navbar-tab ${isActive('/contact')}`}>CONTACT</Link>
       </div>
     </nav>
