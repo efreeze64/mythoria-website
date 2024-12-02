@@ -6,7 +6,6 @@ import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 import Lyrics from "./fate-lyrics";
 
-import "@/assets/styling/global-style.css";
 import "./fate-of-my-kind.css";
 
 import Fate from "@/assets/img/Fate of My Kind.png";

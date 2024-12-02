@@ -1,36 +1,77 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "@/assets/styling/global-style.css";
 import "./calender.css";
 
 import Footer from "@/assets/components/footer";
 import Navbar from "@/assets/components/navbar";
+import ConcertEntry from "./concert-entry";
 
 import CryingEmoji from "@/assets/img/dregun_crying.png";
+import { Concert } from "@/types";
 
 const Calender = () => {
-  const list = [];
+  const [data, setData] = useState<Concert[] | null>(null);
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/getConcerts")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      });
+  }, []);
+
+  const filterUpcomingConcerts = () => {
+    if (!data) return [];
+    const today = new Date();
+    return data
+      .filter((concert) => {
+        // Filter concerts that are not upcomming
+        if (!concert.date || !concert.date.seconds) return false;
+        const concertDate = new Date(concert.date.seconds * 1000);
+        return concertDate >= today;
+      })
+      .sort((a, b) => {
+        // Sort by closest date
+        const dateA = new Date(a.date.seconds * 1000);
+        const dateB = new Date(b.date.seconds * 1000);
+        return dateA.getTime() - dateB.getTime();
+      });
+  };
+
+  const upcomingConcerts = filterUpcomingConcerts();
 
   return (
-    <body>
+    <>
       <Navbar />
       <div className="center-wrapper">
-        <h1>Concerts</h1>
-        {list.length > 0 ? (
-          <div className="container"></div>
+        <div className="container">
+          <h1>Concerts</h1>
+        </div>
+        {isLoading ? (
+          <div className="container">
+            <p>Fetching all upcomming concerts</p>
+          </div>
+        ) : upcomingConcerts.length > 0 ? (
+          <div className="container" id="column">
+            {upcomingConcerts.map((concert, index) => (
+              <ConcertEntry key={index} concert={concert} />
+            ))}
+          </div>
         ) : (
           <div className="container" id="empty">
             <p>There are no upcoming concerts</p>
             <img src={CryingEmoji.src} alt="crying dragon" />
-            <div className="spacing"></div>
           </div>
         )}
       </div>
+      <div className="spacing"></div>
       <Footer />
-    </body>
+    </>
   );
 };
-
 export default Calender;

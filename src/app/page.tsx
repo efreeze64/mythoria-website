@@ -1,12 +1,11 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 
-import "@/assets/styling/global-style.css";
 import "./home.css";
 
 import logo from "@/assets/img/mythoria.png";
@@ -21,78 +20,131 @@ import spotify from "@/assets/img/Spotify_Primary_Logo_RGB_Green.png";
 import icon from "@/assets/img/Mythoria_icon_white.png";
 
 const Home = () => {
-    const [modalActive, setModaActive] = useState(false);
+  const [modalActive, setModaActive] = useState(false);
 
-    const toggleModalActive = ()=> {
-        setModaActive(!modalActive);
-      }
+  const toggleModalActive = () => {
+    setModaActive(!modalActive);
+  };
 
-    return (
-        <body>
-             <nav>
-                <div className="transparent-navbar">
-                <div className="dropdown">
-                    <button className="dropbtn">BAND</button>
-                        <div className="dropdown-content">
-                            <Link href="/about">ABOUT US</Link>
-                            <Link href="/facts">FACTS</Link>
-                            <Link href="/option6" target="_blank">PHOTOS</Link>
-                        </div>
-                    </div>
-                    <Link href="/music">MUSIC</Link>
-                    <Link href="/calender">CONCERTS</Link>
-                    <div className="dropdown">
-                        <button className="dropbtn">SOCIAL MEDIA</button>
-                            <div className="dropdown-content">
-                                <Link href="https://www.facebook.com/mythoriaband" target="_blank">Facebook</Link>
-                                <Link href="https://www.instagram.com/mythoriaband" target="_blank">Instagram</Link>
-                                <Link href="https://x.com/mythoriaband" target="_blank">X / Twitter</Link>
-                                <Link href="https://www.tiktok.com/@mythoriaband" target="_blank">TikTok</Link>
-                                <Link href="https://www.youtube.com/@Mythoriaband" target="_blank">YouTube</Link>
-                                <Link href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b" target="_blank">Spotify</Link>
-                            </div>
-                        </div>
-                    <Link href="https://mythoria.bandcamp.com/" target="_blank">MERCH</Link>
-                    <Link href="/contact">CONTACT</Link>
-                </div>
-                
-                <div className="open-modal" onClick={toggleModalActive}>
-        <img src={open.src} className="toggle-button" />
-      </div>
+  return (
+    <body>
+      <nav>
+        <div className="transparent-navbar">
+          <div className="dropdown">
+            <button className="dropbtn">BAND</button>
+            <div className="dropdown-content">
+              <Link href="/about">ABOUT US</Link>
+              <Link href="/facts">FACTS</Link>
+              <Link href="/option6" target="_blank">
+                PHOTOS
+              </Link>
+            </div>
+          </div>
+          <Link href="/music">MUSIC</Link>
+          <Link href="/calender">CONCERTS</Link>
+          <div className="dropdown">
+            <button className="dropbtn">SOCIAL MEDIA</button>
+            <div className="dropdown-content">
+              <Link
+                href="https://www.facebook.com/mythoriaband"
+                target="_blank"
+              >
+                Facebook
+              </Link>
+              <Link
+                href="https://www.instagram.com/mythoriaband"
+                target="_blank"
+              >
+                Instagram
+              </Link>
+              <Link href="https://x.com/mythoriaband" target="_blank">
+                X / Twitter
+              </Link>
+              <Link href="https://www.tiktok.com/@mythoriaband" target="_blank">
+                TikTok
+              </Link>
+              <Link
+                href="https://www.youtube.com/@Mythoriaband"
+                target="_blank"
+              >
+                YouTube
+              </Link>
+              <Link
+                href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b"
+                target="_blank"
+              >
+                Spotify
+              </Link>
+            </div>
+          </div>
+          <Link href="https://mythoria.bandcamp.com/" target="_blank">
+            MERCH
+          </Link>
+          <Link href="/contact">CONTACT</Link>
+        </div>
+
+        <div className="open-modal" onClick={toggleModalActive}>
+          <img src={open.src} className="toggle-button" />
+        </div>
 
         {/*Mobile Navbar*/}
-      <div className={`off-screen-menu ${modalActive ? 'active' : ''}`}>
-        <div className="close-modal" onClick={toggleModalActive}>
-          <img src={close.src} />
+        <div className={`off-screen-menu ${modalActive ? "active" : ""}`}>
+          <div className="close-modal" onClick={toggleModalActive}>
+            <img src={close.src} />
+          </div>
+          <ul className="mobile-navbar">
+            <li>
+              <Link href="/about">ABOUT US</Link>
+            </li>
+            <li>
+              <Link href="/music"> MUSIC</Link>
+            </li>
+            <li>
+              <Link href="/calender">CONCERTS</Link>
+            </li>
+            <li>
+              <Link href="https://mythoria.bandcamp.com/" target="_blank">
+                MERCH
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">CONTACT</Link>
+            </li>
+          </ul>
+          <div className="social-media">
+            <Link href="https://www.facebook.com/mythoriaband" target="_blank">
+              <img src={facebook.src}></img>
+            </Link>
+            <Link href="https://www.instagram.com/mythoriaband" target="_blank">
+              <img src={instagram.src}></img>
+            </Link>
+            <Link href="https://x.com/mythoriaband" target="_blank">
+              <img src={x.src}></img>
+            </Link>
+            <Link href="https://www.tiktok.com/@mythoriaband" target="_blank">
+              <img src={tiktok.src}></img>
+            </Link>
+            <Link href="https://www.youtube.com/@Mythoriaband" target="_blank">
+              <img src={youtube.src}></img>
+            </Link>
+            <Link
+              href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b"
+              target="_blank"
+            >
+              <img src={spotify.src}></img>
+            </Link>
+          </div>
+          <div className="icon">
+            <img src={icon.src}></img>
+          </div>
         </div>
-        <ul className="mobile-navbar">
-          <li><Link href="/about">ABOUT US</Link></li>
-          <li><Link href="/music"> MUSIC</Link></li>
-          <li><Link href="/calender">CONCERTS</Link></li>
-          <li><Link href="https://mythoria.bandcamp.com/" target='_blank'>MERCH</Link></li>
-          <li><Link href="/contact">CONTACT</Link></li>
-        </ul>
-        <div className="social-media">
-          <Link href="https://www.facebook.com/mythoriaband" target="_blank"><img src={facebook.src}></img></Link>
-          <Link href="https://www.instagram.com/mythoriaband" target="_blank"><img src={instagram.src}></img></Link>
-          <Link href="https://x.com/mythoriaband" target="_blank"><img src={x.src}></img></Link>
-          <Link href="https://www.tiktok.com/@mythoriaband" target="_blank"><img src={tiktok.src}></img></Link>
-          <Link href="https://www.youtube.com/@Mythoriaband" target="_blank"><img src={youtube.src}></img></Link>
-          <Link href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b" target="_blank"><img src={spotify.src}></img></Link>
-        </div>
-        <div className="icon">
-          <img src={icon.src}></img>
-        </div>
+      </nav>
+      <div className="image-container">
+        <img className="image" alt="mythoria logo" src={logo.src} />
       </div>
-
-            </nav>
-            <div className="image-container">
-                <img className="image" alt="mythoria logo" src={logo.src}/>
-            </div>
-
-            <Footer />
-        </body>
-    )
-}
+      <Footer />
+    </body>
+  );
+};
 
 export default Home;
