@@ -22,3 +22,22 @@ h1 {
   align-items: center;
   gap: 20px;
 }
+
+.expandable {
+  margin: 100px 0px 20px;
+  font-size: 50px;
+  color: #af4c4c;
+  transition: all 0.2s ease;
+  border: 5px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.expandable:hover {
+  cursor: pointer;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #af4c4c;
+}

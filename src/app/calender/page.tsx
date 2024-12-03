@@ -15,6 +15,7 @@ import { Concert } from "@/types";
 const Calender = () => {
   const [data, setData] = useState<Concert[] | null>(null);
   const [isLoading, setLoading] = useState(true);
+  const [outDatedConcerts, setOutDatedConcerts] = useState(false);
 
   useEffect(() => {
     fetch("/api/getConcerts")
@@ -24,6 +25,10 @@ const Calender = () => {
         setLoading(false);
       });
   }, []);
+
+  const showOutDatedConcerts = () => {
+    setOutDatedConcerts(!outDatedConcerts);
+  };
 
   const filterUpcomingConcerts = () => {
     if (!data) return [];
@@ -43,7 +48,26 @@ const Calender = () => {
       });
   };
 
+  const filterEarlierConcerts = () => {
+    if (!data) return [];
+    const today = new Date();
+    return data
+      .filter((concert) => {
+        // Filter concerts that are not upcomming
+        if (!concert.date || !concert.date.seconds) return false;
+        const concertDate = new Date(concert.date.seconds * 1000);
+        return concertDate < today;
+      })
+      .sort((a, b) => {
+        // Sort by closest date
+        const dateA = new Date(a.date.seconds * 1000);
+        const dateB = new Date(b.date.seconds * 1000);
+        return dateA.getTime() - dateB.getTime();
+      });
+  };
+
   const upcomingConcerts = filterUpcomingConcerts();
+  const earlierConcerts = filterEarlierConcerts();
 
   return (
     <>
@@ -57,11 +81,25 @@ const Calender = () => {
             <p>Fetching all upcomming concerts</p>
           </div>
         ) : upcomingConcerts.length > 0 ? (
-          <div className="container" id="column">
-            {upcomingConcerts.map((concert, index) => (
-              <ConcertEntry key={index} concert={concert} />
-            ))}
-          </div>
+          <>
+            <div className="container" id="column">
+              {upcomingConcerts.map((concert, index) => (
+                <ConcertEntry key={index} concert={concert} />
+              ))}
+            </div>
+            <p onClick={showOutDatedConcerts} className="expandable">
+              Show Earlier Concerts
+            </p>
+            {outDatedConcerts ? (
+              <div className="container" id="column">
+                {earlierConcerts.map((concert, index) => (
+                  <ConcertEntry key={index} concert={concert} />
+                ))}
+              </div>
+            ) : (
+              <></>
+            )}
+          </>
         ) : (
           <div className="container" id="empty">
             <p>There are no upcoming concerts</p>
