@@ -97,6 +97,9 @@ const Home = () => {
               <Link href="/about">ABOUT US</Link>
             </li>
             <li>
+              <Link href="/facts">FACTS</Link>
+            </li>
+            <li>
               <Link href="/music"> MUSIC</Link>
             </li>
             <li>

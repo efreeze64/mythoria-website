@@ -106,8 +106,8 @@ const Calender = () => {
             <img src={CryingEmoji.src} alt="crying dragon" />
           </div>
         )}
+        <div className="spacing"></div>
       </div>
-      <div className="spacing"></div>
       <Footer />
     </>
   );

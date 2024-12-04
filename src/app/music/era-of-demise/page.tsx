@@ -12,7 +12,7 @@ import Era from "@/assets/img/Era of Demise.png";
 
 const EraOfDemise = () => {
   return (
-    <body>
+    <>
       <Navbar />
       <div className="center-wrapper">
         <h1>Era of Demise</h1>
@@ -24,24 +24,11 @@ const EraOfDemise = () => {
               <li>TYPE: EP (DEMO)</li>
             </ul>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              tristique, ex a sodales fermentum, purus nulla feugiat justo, sed
-              blandit nunc lacus vel lorem. Integer sit amet orci sem. Ut
-              lacinia vestibulum lacus non volutpat. Donec ut aliquet purus. Sed
-              vehicula, libero non pretium maximus, sapien ex dignissim lorem,
-              ut tristique ipsum erat non mauris. Nullam quis nunc vehicula,
-              sodales felis vitae,Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Praesent tristique, ex a sodales fermentum, purus
-              nulla feugiat justo, sed blandit nunc lacus vel lorem. Integer sit
-              amet orci sem. Ut lacinia vestibulum lacus non volutpat. Donec ut
-              aliquet purus. Sed vehicula, libero non pretium maximus, sapien ex
-              dignissim lorem, ut tristique ipsum erat non mauris. Nullam quis
-              nunc vehicula, sodales felis vitae, fermentum nunc. Phasellus
-              rhoncus, velit nec convallis dignissim, elit odio cursus arcu, et
-              malesuada enim metus non quam. Pellentesque habitant morbi
-              tristique senectus et netus et malesuada fames ac turpis egestas.
-              Morbi vitae scelerisque mauris. Quisque congue sapien sit amet
-              velit convallis tincidunt.
+              Era of Demise is an EP consisting of 3 songs. Recorded in the
+              short span of just 3 days, Era of Demise marks the beginning of
+              Mythoria’s journey in the world of heavy metal. The EP’s songs are
+              some of the first songs written by Elias and Daniel, and holds a
+              special place in their hearts as a reminder of where it all began.
             </p>
           </div>
         </div>
@@ -54,7 +41,7 @@ const EraOfDemise = () => {
         <div className="spacing"></div>
       </div>
       <Footer />
-    </body>
+    </>
   );
 };
 

@@ -2,6 +2,8 @@
   height: auto;
   width: 50%;
   margin-bottom: 50px;
+  aspect-ratio: 1/1;
+  object-fit: scale-down;
 }
 
 .container#upper {
@@ -75,4 +77,41 @@
 #music a:hover {
   transform: scale(1.1);
   color: #af4c4c;
+}
+
+@media screen and (max-width: 800px) {
+  .container#upper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+  }
+
+  .container img {
+    height: auto;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  #text {
+    display: flex;
+    overflow-x: visible;
+    overflow-y: visible;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container#upper ul.row {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .container#music {
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    margin-bottom: 10%;
+    flex-direction: column;
+  }
 }

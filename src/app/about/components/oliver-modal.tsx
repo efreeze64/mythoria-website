@@ -1,7 +1,7 @@
 import React from "react";
 import "./modal.css";
 
-import Oliver from "@/assets/img/Kopi af 3P5A5763.jpg";
+import Oliver from "@/assets/img/people/oliver_2.jpg";
 
 function Modal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -16,14 +16,16 @@ function Modal({ isOpen, onClose }) {
           </div>
           <div className="row" id="2">
             <p>
-              Elias is a multi-talented musician and the dynamic drummer of the
-              band, bringing rhythm and energy to every performance. Beyond the
-              drums, he’s skilled on guitar and bass, often crafting the band’s
-              instrumentals with his versatile musicality. Recently, Elias has
-              dived into the world of mixing and mastering, expanding his
-              creative reach and refining the band’s sound from the studio to
-              the stage. His passion for music shines through in every beat and
-              melody he creates.
+              Oliver, Mythoria's bassist and youngest member at 19, radiates an
+              energetic presence on stage, captivating audiences with his
+              dynamic performance style. With focus on engaging movement, bold
+              stances, and strong connection with the crowd and band, Oliver’s
+              approach supports Mythoria’s mission to create an unforgettable
+              live experience.
+              <br /> Having begun his musical journey with acoustic guitar at 9
+              and bass at 12, Oliver has grown a lifelong passion for music and
+              performance. Alongside his commitment to Mythoria, Oliver is also
+              pursuing university studies.
             </p>
           </div>
         </div>

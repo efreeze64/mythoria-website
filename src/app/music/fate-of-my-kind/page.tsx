@@ -51,17 +51,17 @@ const FateOfMyKind = () => {
             </p>
           </div>
         </div>
-        {/*When Fate releases, change theese iframe*/}
         <div className="container" id="music">
           <iframe
             width="100%"
             height="500px"
-            src="https://www.youtube.com/embed/SoqEyb6THhY?si=TvWCKqT5GBoziQKY"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/2IyvtTLx9cU"
+            title="Mythoria  - Fate of My Kind (Official Audio)"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className="mobile"
           ></iframe>
         </div>
 
