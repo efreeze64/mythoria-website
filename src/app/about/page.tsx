@@ -14,8 +14,11 @@ import RobbieModal from "./components/robbie-modal";
 import "@/assets/styling/global-style.css";
 import "./about.css";
 
+import Oliver from "@/assets/img/people/oliver_2.jpg";
 import Daniel from "@/assets/img/Kopi af 3P5A5763.jpg";
-import Fisk from "@/assets/img/Fate of My Kind.png";
+import Band1 from "@/assets/img/band/band_1.jpg";
+//import Band2 from "";
+import Band3 from "@/assets/img/band/band_3.jpg";
 
 const About = () => {
   const [chrisModal, setChrisModal] = useState(false);
@@ -39,7 +42,7 @@ const About = () => {
   const openRobbieModal = () => setRobbieModal(true);
   const closeRobbieModal = () => setRobbieModal(false);
 
-  const photos = [Daniel.src, Fisk.src];
+  const photos = [Band1.src, Band3.src];
 
   return (
     <body>
@@ -81,7 +84,7 @@ const About = () => {
             <p>Elias Friis</p>
           </div>
           <div className="picture" onClick={openOliverModal}>
-            <img src={Daniel.src} alt="" />
+            <img src={Oliver.src} alt="" />
             <p>Oliver Christensen</p>
           </div>
           <div className="picture" onClick={openRobbieModal}>

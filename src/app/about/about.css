@@ -23,6 +23,9 @@
 .picture img {
   width: 350px;
   transition: all 0.5s ease;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
 }
 
 .picture img:hover {
@@ -31,11 +34,19 @@
 }
 
 @media screen and (max-width: 800px) {
-  .column#text-column {
+  .container#text-column {
     display: flex;
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin-bottom: 5%;
+  }
+
+  .container#picture {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .picture {
@@ -46,12 +57,14 @@
   }
 
   .picture img {
-    width: 150px;
+    width: 250px;
     height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
   }
 
   .picture img:hover {
-    width: 150px;
+    width: 250px;
   }
 
   .picture p {

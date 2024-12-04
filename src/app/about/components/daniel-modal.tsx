@@ -16,14 +16,16 @@ function Modal({ isOpen, onClose }) {
           </div>
           <div className="row" id="2">
             <p>
-              Elias is a multi-talented musician and the dynamic drummer of the
-              band, bringing rhythm and energy to every performance. Beyond the
-              drums, he’s skilled on guitar and bass, often crafting the band’s
-              instrumentals with his versatile musicality. Recently, Elias has
-              dived into the world of mixing and mastering, expanding his
-              creative reach and refining the band’s sound from the studio to
-              the stage. His passion for music shines through in every beat and
-              melody he creates.
+              Standing at an impressive height of 1.95 meters, Daniel takes on
+              the role of frontman for Mythoria. He is a powerhouse brimming
+              with wild and innovative ideas, which fuel his drive to achieve
+              his dreams and ambitions. <br /> Imagine a fusion of Jim Carrey’s
+              character in “The Mask” and Bam Margera from “Jackass”—that
+              perfectly encapsulates Daniel's vibrant mind and boundless energy.
+              Self-taught in vocals, Daniel has always excelled at imitating
+              cartoon characters, making it a natural progression for him to
+              unleash his skills in screaming and growling as a vocalist.
+              Interestingly, before he embraced singing, he was a drummer.
             </p>
           </div>
         </div>

@@ -29,6 +29,7 @@ const FromTheShadows = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
+          className="mobile"
         ></iframe>
         <h1>About the song</h1>
         <div className="container" id="text">
@@ -39,9 +40,12 @@ const FromTheShadows = () => {
             ahout{" "}
           </p>
         </div>
-        <h1 className="open-lyrics" onClick={OpenLyrics}>
-          VIEW LYRICS
-        </h1>
+        <div className="spacing"></div>
+        <div className="align-middle">
+          <h1 className="open-lyrics" onClick={OpenLyrics}>
+            VIEW LYRICS
+          </h1>
+        </div>
         <div className="container">{lyrics ? <Lyrics /> : <></>}</div>
         <div className="spacing"></div>
       </div>

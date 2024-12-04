@@ -66,3 +66,73 @@
 .link:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 800px) {
+  .column {
+    display: flex;
+    width: 80%;
+    height: 175px;
+    background-color: black;
+    flex-direction: column;
+    border-radius: 0px;
+    border-color: none;
+    border-width: none;
+    border-style: none;
+    padding-bottom: 15%;
+  }
+
+  .column:hover {
+    border-color: none;
+    border-width: none;
+    border-style: none;
+    background-color: black;
+  }
+
+  .inner-column#middle p {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .inner-column#left {
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .inner-column#left p {
+    font-size: 15px;
+  }
+
+  .inner-column#middle {
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  .inner-column#middle p {
+    font-size: 25px;
+    margin: 5px;
+  }
+
+  .inner-column#right {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+    padding: auto;
+  }
+  .link {
+    height: 45px;
+    width: auto;
+    opacity: 0.5;
+  }
+}

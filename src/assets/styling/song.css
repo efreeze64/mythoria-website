@@ -1,22 +1,60 @@
 .container img {
-    width: 500px;
-    height: auto;
+  width: 500px;
+  height: auto;
 }
 
 .container#text {
-    text-align: center;
-    width: 50%;
+  text-align: center;
+  width: 50%;
 }
 
 .open-lyrics {
-    margin-top: 5%;
-    color: orange;
-    cursor: pointer;
-    transition: all .3s ease;
+  margin-top: 5%;
+  color: orange;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .open-lyrics:hover {
-    color: #af4c4c;
-    transform: scale(1.2) ;
+  color: #af4c4c;
+  transform: scale(1.2);
 }
 
+@media screen and (max-width: 800px) {
+  .mobile {
+    width: 90%;
+    height: auto;
+  }
+  .container#text {
+    text-align: center;
+    width: 100%;
+  }
+  .open-lyrics {
+    margin-top: 5%;
+    color: orange;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .align-middle {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .open-lyrics:hover {
+    color: orange;
+    transform: scale(1);
+  }
+
+  h1 {
+    text-align: center;
+  }
+}

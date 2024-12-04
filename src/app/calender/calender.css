@@ -41,3 +41,18 @@ h1 {
   border-style: solid;
   border-color: #af4c4c;
 }
+
+@media screen and (max-width: 800px) {
+  .expandable {
+    margin: 100px 0px 20px;
+    font-size: 50px;
+    color: #af4c4c;
+    text-align: center;
+    border-style: none;
+  }
+
+  .expandable:hover {
+    color: #af4c4c;
+    border-style: none;
+  }
+}

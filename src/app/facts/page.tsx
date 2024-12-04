@@ -104,8 +104,9 @@ const Facts = () => {
             </p>
           </div>
         </div>
+
+        <div className="spacing"></div>
       </div>
-      <div className="spacing"></div>
 
       <Footer />
     </body>

@@ -1,36 +1,35 @@
 :root {
-    --background-image: url("../assets/img/flying_ship.png")
+  --background-image: url("../assets/img/flying_ship.png");
 }
 
-
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-image: var(--background-image);
-    background-position: center;
-    background-repeat: no-repeat;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background-image: var(--background-image); */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .image {
-    width: 50%;
-    height: auto;
-    /*box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);*/
+  width: 50%;
+  height: auto;
+  /*box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);*/
 }
 
 .transparent-navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.346);
-    padding-top: 10px;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  /* background-color: rgba(0, 0, 0, 0.346); */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .transparent-navbar a {
@@ -40,183 +39,183 @@
   font-family: "Bebas Neue";
   font-weight: bold;
   font-size: 35px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-
 
 /*Same CSS as from navbar.css*/
 .dropdown {
-    position: relative;
-  }
-  
-  .dropbtn {
-    padding: 10px 15px;
-    cursor: pointer;
-    color: white;
-    background: none;
-    border: none;
-    font-family: "Bebas Neue";
-    font-weight: bold;
-    font-size: 35px;
-    text-decoration: none;
-    transition: all .3s ease;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #00000050;
-    width: 220px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    padding: 8px 12px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    transition: all .3s ease;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    text-decoration: underline;
-    color: #af4c4c;
-    transition: all .3s ease;
-  }
+  position: relative;
+}
 
-  .dropbtn:hover, .transparent-navbar a:hover {
-    transition: all .3s ease;
-    text-decoration: underline;
-    color:#af4c4c;
-  }
+.dropbtn {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: 35px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-  .open-modal {
-    display: none;
-  }
-  .close-modal {
-    display: none;
-  }
-  
-  .off-screen-menu {
-    display: none;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #00000050;
+  width: 220px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  color: #af4c4c;
+  transition: all 0.3s ease;
+}
+
+.dropbtn:hover,
+.transparent-navbar a:hover {
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  color: #af4c4c;
+}
+
+.open-modal {
+  display: none;
+}
+.close-modal {
+  display: none;
+}
+
+.off-screen-menu {
+  display: none;
+}
 
 @media screen and (max-width: 800px) {
-    :root {
-        --background-image: url("../assets/img/mobile image.png")
-    }
+  :root {
+    --background-image: url("../assets/img/mobile image.png");
+  }
 
-    .image-container {
+  .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
     background-image: var(--background-image);
-    }
+  }
 
-    .image {
-        width: 75%;
-        height: auto;
-    }
+  .image {
+    width: 75%;
+    height: auto;
+  }
 
-    .transparent-navbar {
-        display: none;
-    }
+  .transparent-navbar {
+    display: none;
+  }
 
-    /*Same CSS as from navbar.css*/
-    .open-modal {
-        display: flex;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        right: 10px;
-        top: 25px
-      }
-    
-      .close-modal {
-        display: flex;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        right: 10px;
-        top: 25px
-      }
-    
-      .off-screen-menu {
-        display: flex;
-        background-color: rgb(23, 23, 23);
-        height: 100vh;
-        width: 100%;
-        /* max-width: 450px; */
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-self: start;
-        font-size: 20px;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-      }
-    
-      .off-screen-menu.active {
-        transform: translateX(0);
-      }
-    
-      .mobile-navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        flex: 3;
-      }
-    
-      .mobile-navbar li {
-        width: 100%;
-        margin: 2% 0% 2%;
-      }
-      
-      .mobile-navbar li a {
-        color: white;
-        text-decoration: none;
-        font-size: 25px;
-      }
-    
-      .social-media {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        gap: 20px;
-        flex: 1;
-        /* align-items: center; */
-      }
-    
-      .social-media img {
-        height: 35px;
-        width: auto;
-      }
-    
-      .icon {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-      }
-      
-      .icon img {
-        height: auto;
-        width: 50px;
-      }
+  /*Same CSS as from navbar.css*/
+  .open-modal {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+
+  .close-modal {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+
+  .off-screen-menu {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    height: 100vh;
+    width: 100%;
+    /* max-width: 450px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: start;
+    font-size: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .off-screen-menu.active {
+    transform: translateX(0);
+  }
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 3;
+  }
+
+  .mobile-navbar li {
+    width: 100%;
+    margin: 2% 0% 2%;
+  }
+
+  .mobile-navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    /* align-items: center; */
+  }
+
+  .social-media img {
+    height: 35px;
+    width: auto;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .icon img {
+    height: auto;
+    width: 50px;
+  }
 }
