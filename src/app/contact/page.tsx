@@ -29,15 +29,23 @@ const Contact = () => {
               <p className="text">
                 To contact Mythoria, either fill the form below <br /> or
                 contact us at: <br />{" "}
-                <p className="highlighted-text">band@mythoria.dk</p>
+                <a href="mailto:band@mythoria.dk" className="highlighted-text">
+                  band@mythoria.dk
+                </a>
               </p>
             </div>
             <div className="container" id="3">
               <form className="email-form">
                 <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder="Your Email Address"
                   required
                 />
                 <input

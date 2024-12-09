@@ -16,6 +16,7 @@ type ConcertInfo = {
 
 const ConcertEntry: React.FC<ConcertInfo> = ({ concert }) => {
   const { seconds } = concert.date;
+  //const seconds = concert.date.seconds;
 
   const date = new Date(seconds * 1000);
 

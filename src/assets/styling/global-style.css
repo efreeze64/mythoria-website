@@ -30,6 +30,14 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  color: white;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
 .center-wrapper {
   display: flex;
   flex-direction: column;
@@ -64,12 +72,12 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #000;
 }
 
 @media screen and (max-width: 800px) {

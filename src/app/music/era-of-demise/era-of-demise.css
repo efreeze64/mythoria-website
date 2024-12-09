@@ -114,4 +114,8 @@
     margin-bottom: 10%;
     flex-direction: column;
   }
+
+  h1 {
+    text-align: center;
+  }
 }

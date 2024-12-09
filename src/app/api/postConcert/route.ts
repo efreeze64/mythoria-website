@@ -1,29 +1,18 @@
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { NextResponse } from "next/server";
+import { collection, addDoc } from "firebase/firestore";
 import { db } from "@/firebase";
 
-export default async function handler(req, res) {
-  if (req.method === "POST") {
-    try {
-      const { name, location, date, bands, link, tickets } = req.body;
+export async function POST(req: Request) {
+  try {
+    const concertData = await req.json();
+    const docRef = await addDoc(collection(db, "Concerts"), concertData);
 
-      // Add the data to Firestore
-      const docRef = await addDoc(collection(db, "Concerts"), {
-        name,
-        location,
-        date: Timestamp.fromDate(new Date(date)), // Convert date to Firestore format
-        bands,
-        link,
-        tickets,
-      });
-
-      res.status(201).json({ id: docRef.id }); // Success response
-    } catch (error) {
-      console.error("Error adding document: ", error);
-      res.status(500).json({ error: "Failed to add concert" });
-    }
-  } else {
-    // Handle unsupported methods
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    return NextResponse.json({ success: true, id: docRef.id }, { status: 200 });
+  } catch (error) {
+    console.error("Error uploading concert: ", error);
+    return NextResponse.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
   }
 }

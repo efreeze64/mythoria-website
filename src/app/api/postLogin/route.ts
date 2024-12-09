@@ -1,22 +1,23 @@
-import { NextResponse } from "next/server";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { NextResponse } from "next/server";
 
-export async function POST(request) {
-  const { email, password } = await request.json();
-
-  console.log("Email:", email);
-  console.log("Password:", password);
-
-  if (!email || !password) {
-    return NextResponse.json({ error: "Email and Password are required." });
-  }
+export async function POST(req) {
+  const { email, password } = await req.json();
 
   try {
-    const userCredentials = signInWithEmailAndPassword(auth, email, password);
-    return NextResponse.json(userCredentials);
+    const userCredential = await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
+    const user = userCredential.user;
+
+    return NextResponse.json(
+      { uid: user.uid, email: user.email },
+      { status: 200 }
+    );
   } catch (error) {
-    console.log("Error login in: ", error);
-    return NextResponse.json({ error: error.message });
+    return NextResponse.json({ error: error.message }, { status: 400 });
   }
 }

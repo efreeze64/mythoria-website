@@ -7,7 +7,7 @@ import "./calender.css";
 
 import Footer from "@/assets/components/footer";
 import Navbar from "@/assets/components/navbar";
-import ConcertEntry from "./concert-entry";
+import ConcertEntry from "@/assets/components/concert-entry";
 
 import CryingEmoji from "@/assets/img/dregun_crying.png";
 import { Concert } from "@/types";
@@ -41,7 +41,7 @@ const Calender = () => {
         return concertDate >= today;
       })
       .sort((a, b) => {
-        // Sort by closest date
+        // Sort by closes date
         const dateA = new Date(a.date.seconds * 1000);
         const dateB = new Date(b.date.seconds * 1000);
         return dateA.getTime() - dateB.getTime();

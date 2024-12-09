@@ -22,15 +22,16 @@
 
 .picture img {
   width: 350px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   height: auto;
   aspect-ratio: 2 / 3;
   object-fit: cover;
 }
 
 .picture img:hover {
-  width: 400px;
   cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 800px) {

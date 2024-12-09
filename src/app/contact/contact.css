@@ -6,6 +6,8 @@
   color: rgb(255, 200, 0);
   font-weight: bold;
   text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 .email-form {
