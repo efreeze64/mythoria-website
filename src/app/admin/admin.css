@@ -237,6 +237,25 @@ button {
   font-size: 15px;
 }
 
+.expandable {
+  margin: 100px 0px 20px;
+  font-size: 50px;
+  color: #af4c4c;
+  transition: all 0.2s ease;
+  border: 5px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.expandable:hover {
+  cursor: pointer;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #af4c4c;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -244,15 +263,6 @@ button {
   overflow-x: none;
   justify-content: space-between;
   width: 100%;
-}
-
-.row-middle-line {
-  width: 0px;
-  padding: 2px;
-  padding-bottom: 600px;
-  margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.09);
-  height: 400px;
 }
 
 @media screen and (max-width: 800px) {

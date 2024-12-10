@@ -15,6 +15,9 @@ const Contact = () => {
     message: "",
   });
   const [isSent, setIsSent] = useState(false);
+  const HandleSent = () => {
+    setIsSent(true);
+  };
 
   return (
     <>
@@ -27,6 +30,8 @@ const Contact = () => {
           <>
             <div className="container" id="2">
               <p className="text">
+                (The logic for sending a mail dosen't work yet)
+                <br />
                 To contact Mythoria, either fill the form below <br /> or
                 contact us at: <br />{" "}
                 <a href="mailto:band@mythoria.dk" className="highlighted-text">
@@ -35,7 +40,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="container" id="3">
-              <form className="email-form">
+              <form className="email-form" onSubmit={HandleSent}>
                 <input
                   type="text"
                   name="name"
@@ -61,8 +66,10 @@ const Contact = () => {
           </>
         ) : (
           <div>
-            <p>Thank your for your message</p>
-            <p>We will reply as soon as possible</p>
+            <p className="text">
+              Thank your for your message <br />
+              We will reply as soon as possible
+            </p>
           </div>
         )}
       </div>

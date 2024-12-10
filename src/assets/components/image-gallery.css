@@ -38,15 +38,24 @@
 .left-arrow {
   left: 10px;
   transition: all 0.2s ease;
+  color: white;
+  padding: 15px 10px;
+  background-color: #242424;
+  border-radius: 5px;
 }
 
 .right-arrow {
   right: 10px;
   transition: all 0.2s ease;
+  color: white;
+  padding: 15px 10px;
+  background-color: #242424;
+  border-radius: 5px;
 }
 
 .arrow:hover {
   color: #af4c4c;
+  background-color: aliceblue;
 }
 
 @media screen and (max-width: 800px) {

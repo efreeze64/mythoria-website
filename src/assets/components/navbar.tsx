@@ -5,16 +5,16 @@ import Link from "next/link";
 
 import "./navbar.css";
 
-import mythoria from "../img/mythoria.png";
-import close from "../img/close_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import open from "../img/menu_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import facebook from "../img/Facebook_Logo_Primary.png";
-import instagram from "../img/Instagram_Glyph_Gradient.png";
-import x from "../img/logo-white.png";
-import tiktok from "../img/TikTok_Icon_Black_Circle.png";
-import youtube from "../img/youtube_social_icon_red.png";
-import spotify from "../img/Spotify_Primary_Logo_RGB_Green.png";
-import icon from "../img/Mythoria_icon_white.png";
+import mythoria from "@/assets/img/mythoria.png";
+import close from "@/assets/img/close_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import open from "@/assets/img/menu_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import facebook from "@/assets/img/Facebook_Logo_Primary.png";
+import instagram from "@/assets/img/Instagram_Glyph_Gradient.png";
+import x from "@/assets/img/logo-white.png";
+import tiktok from "@/assets/img/TikTok_Icon_Black_Circle.png";
+import youtube from "@/assets/img/youtube_social_icon_red.png";
+import spotify from "@/assets/img/Spotify_Primary_Logo_RGB_Green.png";
+import icon from "@/assets/img/Mythoria_icon_white.png";
 
 const Navbar = () => {
   const [currentPath, setCurrentPath] = useState("");
@@ -90,7 +90,7 @@ const Navbar = () => {
             <img src={youtube.src}></img>
           </Link>
           <Link
-            href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b"
+            href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog"
             target="_blank"
           >
             <img src={spotify.src}></img>
@@ -104,7 +104,9 @@ const Navbar = () => {
       {/* Left Tabs */}
       <div className="navbar-tabs" id="left">
         <div className="dropdown">
-          <button className="dropbtn">BAND</button>
+          <Link href="/about">
+            <button className="dropbtn">BAND</button>
+          </Link>
           <div className="dropdown-content">
             <Link href="/about" className={isActive("/about")}>
               ABOUT US
@@ -112,11 +114,7 @@ const Navbar = () => {
             <Link href="/facts" className={isActive("/facts")}>
               FACTS
             </Link>
-            <Link
-              href="/option6"
-              target="_blank"
-              className={isActive("/option6")}
-            >
+            <Link href="/photo" className={isActive("/photo")}>
               PHOTOS
             </Link>
           </div>
@@ -143,7 +141,9 @@ const Navbar = () => {
       {/* Right Tabs */}
       <div className="navbar-tabs" id="right">
         <div className="dropdown">
-          <button className="dropbtn">SOCIAL MEDIA</button>
+          <Link href="/social">
+            <button className="dropbtn">SOCIAL MEDIA</button>
+          </Link>
           <div className="dropdown-content">
             <Link href="https://www.facebook.com/mythoriaband" target="_blank">
               Facebook
@@ -161,7 +161,7 @@ const Navbar = () => {
               YouTube
             </Link>
             <Link
-              href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b"
+              href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog"
               target="_blank"
             >
               Spotify

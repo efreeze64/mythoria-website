@@ -90,14 +90,19 @@ const Calender = () => {
             <p onClick={showOutDatedConcerts} className="expandable">
               Show Earlier Concerts
             </p>
-            {outDatedConcerts ? (
+            {!outDatedConcerts ? (
+              <></>
+            ) : earlierConcerts.length > 0 ? (
               <div className="container" id="column">
                 {earlierConcerts.map((concert, index) => (
                   <ConcertEntry key={index} concert={concert} />
                 ))}
               </div>
             ) : (
-              <></>
+              <div className="container" id="empty">
+                <p>There are no eariler concerts</p>
+                <img src={CryingEmoji.src} alt="crying dragon" />
+              </div>
             )}
           </>
         ) : (

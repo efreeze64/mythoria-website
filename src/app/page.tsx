@@ -31,11 +31,13 @@ const Home = () => {
       <nav>
         <div className="transparent-navbar">
           <div className="dropdown">
-            <button className="dropbtn">BAND</button>
+            <Link href="/about">
+              <button className="dropbtn">BAND</button>
+            </Link>
             <div className="dropdown-content">
               <Link href="/about">ABOUT US</Link>
               <Link href="/facts">FACTS</Link>
-              <Link href="/option6" target="_blank">
+              <Link href="/photo" target="_blank">
                 PHOTOS
               </Link>
             </div>
@@ -43,7 +45,9 @@ const Home = () => {
           <Link href="/music">MUSIC</Link>
           <Link href="/calender">CONCERTS</Link>
           <div className="dropdown">
-            <button className="dropbtn">SOCIAL MEDIA</button>
+            <Link href="/social">
+              <button className="dropbtn">SOCIAL MEDIA</button>
+            </Link>
             <div className="dropdown-content">
               <Link
                 href="https://www.facebook.com/mythoriaband"
@@ -70,14 +74,14 @@ const Home = () => {
                 YouTube
               </Link>
               <Link
-                href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b"
+                href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog"
                 target="_blank"
               >
                 Spotify
               </Link>
             </div>
           </div>
-          <Link href="https://mythoria.bandcamp.com/" target="_blank">
+          <Link href="https://mythoria.bandcamp.com/merch" target="_blank">
             MERCH
           </Link>
           <Link href="/contact">CONTACT</Link>
@@ -106,7 +110,7 @@ const Home = () => {
               <Link href="/calender">CONCERTS</Link>
             </li>
             <li>
-              <Link href="https://mythoria.bandcamp.com/" target="_blank">
+              <Link href="https://mythoria.bandcamp.com/merch" target="_blank">
                 MERCH
               </Link>
             </li>
@@ -131,7 +135,7 @@ const Home = () => {
               <img src={youtube.src}></img>
             </Link>
             <Link
-              href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog?si=0c0aa687f3af4c54&nd=1&dlsi=a27d93c3f46d418b"
+              href="https://open.spotify.com/artist/6gkSJ4e1ZGlb2PCoSFPJog"
               target="_blank"
             >
               <img src={spotify.src}></img>

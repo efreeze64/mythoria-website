@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #1a1a1a;
   width: 100%;
   position: sticky;
@@ -13,6 +13,7 @@
 .navbar-tabs {
   display: flex;
   gap: 10px;
+  flex: 1;
 }
 
 .navbar-tab {
@@ -34,11 +35,15 @@
 }
 
 .navbar-tabs#left {
-  margin-right: 20px;
+  /*  margin-right: 20px; */
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-tabs#right {
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: flex-start;
 }
 
 .navbar-logo {
@@ -46,6 +51,8 @@
   align-items: center;
   justify-content: center;
   align-self: center;
+  flex: 0;
+  margin: 0px 10px;
 }
 
 .logo-image {
@@ -123,6 +130,10 @@
   display: none;
 }
 
+.icon {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .navbar {
     display: flex;
@@ -130,6 +141,7 @@
     width: 100%;
     position: sticky;
     padding: 5px 0px 5px;
+    justify-content: center;
   }
 
   .navbar-tabs {
@@ -228,5 +240,10 @@
   .icon img {
     height: auto;
     width: 50px;
+  }
+
+  .navbar-tabs#left,
+  .navbar-tabs#right {
+    display: none;
   }
 }
