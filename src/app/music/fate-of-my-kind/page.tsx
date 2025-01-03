@@ -30,24 +30,16 @@ const FateOfMyKind = () => {
               <li>TYPE: SINGLE (DEMO)</li>
             </ul>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              tristique, ex a sodales fermentum, purus nulla feugiat justo, sed
-              blandit nunc lacus vel lorem. Integer sit amet orci sem. Ut
-              lacinia vestibulum lacus non volutpat. Donec ut aliquet purus. Sed
-              vehicula, libero non pretium maximus, sapien ex dignissim lorem,
-              ut tristique ipsum erat non mauris. Nullam quis nunc vehicula,
-              sodales felis vitae,Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Praesent tristique, ex a sodales fermentum, purus
-              nulla feugiat justo, sed blandit nunc lacus vel lorem. Integer sit
-              amet orci sem. Ut lacinia vestibulum lacus non volutpat. Donec ut
-              aliquet purus. Sed vehicula, libero non pretium maximus, sapien ex
-              dignissim lorem, ut tristique ipsum erat non mauris. Nullam quis
-              nunc vehicula, sodales felis vitae, fermentum nunc. Phasellus
-              rhoncus, velit nec convallis dignissim, elit odio cursus arcu, et
-              malesuada enim metus non quam. Pellentesque habitant morbi
-              tristique senectus et netus et malesuada fames ac turpis egestas.
-              Morbi vitae scelerisque mauris. Quisque congue sapien sit amet
-              velit convallis tincidunt.
+              Fate of My Kind is based on Platon’s mythology of Atlantis. The
+              story is told through the eyes of a survivor of the tragedy. He
+              explains how the kingdom and its folk, once stood tall and proud,
+              but turned against each other as power and greed filled the minds
+              of the citizens. Gods then decided to destroy the kingdom to
+              punish its people, to its own demise.
+              <br />
+              <br />
+              Fun fact: Fate of My Kind was written spontaneously during one of
+              Daniel's gym sessions.
             </p>
           </div>
         </div>

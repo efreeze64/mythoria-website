@@ -51,21 +51,18 @@ const About = () => {
         <h1>About Page</h1>
         <div className="container" id="text-column">
           <p>
-            Mythoria is a metal band formed west of Copenhagen. The five guys
-            strive to deliver an amazing and memorable sound, with their
-            headbanging riffs, melodic hooks and their energetic performance.{" "}
-            <br /> <br />
-            Mythoria combines elements of many different metal genres, but still
-            manages to keep a memorable sound. Everything from power metal to
-            metalcore have inspired the sound of the band.
-            <br /> <br />
-            The band released their first demo EP in November 2023. The EP
-            recorded during the short span of three days, and features three
-            songs. The EP is named ‘Era of Demise’. The EP marks the beginning
-            of Mythorias quest for metal. With a library of plenty songs for a
-            full-length album, the band have tons of material to deliver a
-            memorable show. There might be some more releases in the nearby
-            future.
+            Mythoria is a metal band formed west of Copenhagen. Consisting of
+            two sets of brothers by blood and a brother by heart, Mythoria is
+            more than just a band—it’s a family bonded by music and spirit.
+            Together, they deliver powerful riffs, melodic hooks, and
+            high-energy performances that promise an unforgettable experience.
+            <br />
+            <br />
+            Mythoria has crafted a modern hybrid sound, blending the intensity
+            of power metal with the depth of melodic death metal. Catchy hooks
+            and impactful vocals give Mythoria’s music a unique edge, leaving
+            listeners with a sense of familiarity that feels fresh with every
+            listen.
           </p>
         </div>
 
