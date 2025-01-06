@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 
 import "./home.css";

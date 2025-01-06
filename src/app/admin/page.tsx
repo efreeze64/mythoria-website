@@ -6,13 +6,10 @@ import { signOut } from "firebase/auth";
 
 import "./admin.css";
 
-import Footer from "@/assets/components/footer";
 import Navbar from "@/assets/components/navbar";
-import ConcertEntry from "@/assets/components/concert-entry";
 import AltConcertEntry from "./alt-concert-entry";
 
 import CryingEmoji from "@/assets/img/dregun_crying.png";
-import Delete from "@/assets/img/trashcan.png";
 import Close from "@/assets/img/close_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import Logout from "@/assets/img/logout.png";
 
