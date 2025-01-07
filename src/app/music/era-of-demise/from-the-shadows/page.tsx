@@ -34,10 +34,14 @@ const FromTheShadows = () => {
         <h1>About the song</h1>
         <div className="container" id="text">
           <p>
-            From the Shadows is ahout From the Shadows is ahout From the Shadows
-            is ahout From the Shadows is ahout From the Shadows is ahout From
-            the Shadows is ahout From the Shadows is ahout From the Shadows is
-            ahout{" "}
+            With inspiration from old tales of a Grim Reaper, who takes the soul
+            of every living creature, and seals them in a lantern, to light its
+            path to its next victim. From the Shadows puts you in the shoes of a
+            person who wanders on mysterious grounds where only a few have
+            survived. A green mist fills the place and it’s hard to make out
+            what's appearing from the dark scene. The only thing that really
+            stands out is the sound of a chain rattling, and a green light
+            shining slightly through the cloudy area.
           </p>
         </div>
         <div className="spacing"></div>
