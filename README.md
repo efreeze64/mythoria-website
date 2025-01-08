@@ -22,7 +22,7 @@ The page has a visual bug and you'll properly notice it. If it occurs, reload th
 
 ## Admin page
 
-If you go to https://mythoria.dk/admin you can login with:
+If you go to http://mythoria.dk/admin or http://localhost:3000/admin you can login with:
 
 email: test@test.dk
 password: test1234
