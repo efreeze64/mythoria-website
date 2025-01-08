@@ -36,7 +36,7 @@ const Social = () => {
           />
           <SocialMedia
             name={"Twitter / X"}
-            link={"https://www.facebook.com/mythoriaband"}
+            link={"https://x.com/mythoriaband"}
             image={x}
             tag={"mythoriaband"}
           />
