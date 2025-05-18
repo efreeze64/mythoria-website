@@ -1,7 +1,7 @@
 import React from "react";
 import "./modal.css";
 
-import Oliver from "@/assets/img/people/oliver_2.jpg";
+import Oliver from "@/assets/img/people/53374821022_4f9f316c78_6k.jpg";
 
 function Modal({ isOpen, onClose }) {
   if (!isOpen) return null;

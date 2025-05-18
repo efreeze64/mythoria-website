@@ -1,7 +1,7 @@
 import React from "react";
 import "./modal.css";
 
-import Elias from "@/assets/img/Kopi af 3P5A5763.jpg";
+import Elias from "@/assets/img/people/53272549683_866e26ad3c_k.jpg";
 
 function Modal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -12,18 +12,18 @@ function Modal({ isOpen, onClose }) {
         <img src={Elias.src} alt="Modal Header" className="modal-img" />
         <div className="modal-content">
           <div className="row" id="1">
-            <p>Elias Friis | Age: 22 | 27-01-2002</p>
+            <p>Elias Friis | Age: 23</p>
           </div>
           <div className="row" id="2">
             <p>
-              Elias is a multi-talented musician and the dynamic drummer of the
-              band, bringing rhythm and energy to every performance. Beyond the
-              drums, he’s skilled on guitar and bass, often crafting the band’s
-              instrumentals with his versatile musicality. Recently, Elias has
-              dived into the world of mixing and mastering, expanding his
-              creative reach and refining the band’s sound from the studio to
-              the stage. His passion for music shines through in every beat and
-              melody he creates.
+              Drummer, songwriter and Mythorias very own “blond elf from a
+              certain fantasy franchise”. Elias takes the title as the
+              mastermind behind the instrumentals in Mythoria’s songs. Fate of
+              My Kind is mixed and composed by himself as the beginning of his
+              newfound power in “music production”, and he spends hours fiddling
+              with switches and knobs, to find the right sound for the right
+              track. How can this guy keep up with mixing for hours? - it’s
+              quite simple. Elias has grown a passion for coffee.
             </p>
           </div>
         </div>

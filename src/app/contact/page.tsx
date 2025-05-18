@@ -5,8 +5,8 @@ import React, { useState, useEffect, use } from "react";
 import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 
-import "./contact.css";
 import "@/assets/styling/global-style.css";
+import "./contact.css";
 
 const Contact = () => {
   const [data, setData] = useState({

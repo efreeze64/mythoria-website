@@ -6,8 +6,8 @@ import Link from "next/link";
 import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 
-import "./music.css";
 import "@/assets/styling/global-style.css";
+import "./music.css";
 
 import Era from "@/assets/img/Era of Demise.png";
 import Fate from "@/assets/img/Fate of My Kind.png";

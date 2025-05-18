@@ -1,7 +1,7 @@
 import React from "react";
 import "./modal.css";
 
-import Robbie from "@/assets/img/Kopi af 3P5A5763.jpg";
+import Robbie from "@/assets/img/people/Robbie.jpg";
 
 function Modal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -16,14 +16,13 @@ function Modal({ isOpen, onClose }) {
           </div>
           <div className="row" id="2">
             <p>
-              Elias is a multi-talented musician and the dynamic drummer of the
-              band, bringing rhythm and energy to every performance. Beyond the
-              drums, he’s skilled on guitar and bass, often crafting the band’s
-              instrumentals with his versatile musicality. Recently, Elias has
-              dived into the world of mixing and mastering, expanding his
-              creative reach and refining the band’s sound from the studio to
-              the stage. His passion for music shines through in every beat and
-              melody he creates.
+              Robbie “ЯBY” Rosendorf is the lead guitarist of the band and
+              Daniel’s boxing pillow. Don’t let his looks fool you. Underneath
+              the sweet smiling surface, there’s a crowd surfing, guitar
+              shredding powerhouse of energy. Robbie is a hard working fella
+              with many amazing talents that he utilizes. When his mind settles
+              on something, his many talents come into play, and all his
+              creations are made with love and passion.
             </p>
           </div>
         </div>

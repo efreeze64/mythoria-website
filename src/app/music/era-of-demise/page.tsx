@@ -6,6 +6,7 @@ import Link from "next/link";
 import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 
+import "@/assets/styling/global-style.css";
 import "./era-of-demise.css";
 
 import Era from "@/assets/img/Era of Demise.png";

@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import "@/assets/styling/global-style.css";
 import "@/assets/styling/lyrics.css";
 
 const HouseLyrics = () => {

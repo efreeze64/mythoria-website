@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 
+import "@/assets/styling/global-style.css";
 import "./social.css";
 
 import Navbar from "@/assets/components/navbar";

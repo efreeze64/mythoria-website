@@ -47,11 +47,6 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/facts" className={isActive("/facts")}>
-              FACTS
-            </Link>
-          </li>
-          <li>
             <Link href="/music" className={isActive("/music")}>
               {" "}
               MUSIC
@@ -110,9 +105,6 @@ const Navbar = () => {
           <div className="dropdown-content">
             <Link href="/about" className={isActive("/about")}>
               ABOUT US
-            </Link>
-            <Link href="/facts" className={isActive("/facts")}>
-              FACTS
             </Link>
             <Link href="/photo" className={isActive("/photo")}>
               PHOTOS

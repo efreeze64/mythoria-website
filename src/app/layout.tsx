@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import "@/assets/styling/global-style.css";
 
 import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";

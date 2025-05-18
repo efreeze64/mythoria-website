@@ -4,6 +4,7 @@ import { Timestamp } from "firebase/firestore";
 import { auth } from "@/firebase";
 import { signOut } from "firebase/auth";
 
+import "@/assets/styling/global-style.css";
 import "./admin.css";
 
 import Navbar from "@/assets/components/navbar";

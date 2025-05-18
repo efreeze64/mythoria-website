@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+
 import "@/assets/styling/global-style.css";
 import "./alt-concert-entry.css";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./modal.css";
 
-import Chris from "@/assets/img/Kopi af 3P5A5763.jpg";
+import Chris from "@/assets/img/people/Chris.jpg";
 
 function Modal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -16,14 +16,12 @@ function Modal({ isOpen, onClose }) {
           </div>
           <div className="row" id="2">
             <p>
-              Elias is a multi-talented musician and the dynamic drummer of the
-              band, bringing rhythm and energy to every performance. Beyond the
-              drums, he’s skilled on guitar and bass, often crafting the band’s
-              instrumentals with his versatile musicality. Recently, Elias has
-              dived into the world of mixing and mastering, expanding his
-              creative reach and refining the band’s sound from the studio to
-              the stage. His passion for music shines through in every beat and
-              melody he creates.
+              The oldest and wisest member of the group. Don’t let that fool you
+              though. Deep inside Chris’ heart, lurks the classic 2000’s goofy
+              metal boy. On stage he’ll give 110% power through his guitar and
+              backup vocals. With his mighty beard, he sets a great look and
+              soul the stage. When everything comes together - Chris is a
+              kindhearted wizard with a guitar as his magical weapon.
             </p>
           </div>
         </div>

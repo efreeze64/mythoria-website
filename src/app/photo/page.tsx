@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 
+import "@/assets/styling/global-style.css";
 import "./photo.css";
 
 import Logo from "@/assets/img/Mythoria_icon_white.png";

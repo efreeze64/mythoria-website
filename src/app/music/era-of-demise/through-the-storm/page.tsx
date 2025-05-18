@@ -6,6 +6,7 @@ import Navbar from "@/assets/components/navbar";
 import Footer from "@/assets/components/footer";
 import Lyrics from "@/app/music/era-of-demise/through-the-storm/through-lyrics";
 
+import "@/assets/styling/global-style.css";
 import "@/assets/styling/song.css";
 
 const ThroughTheStorm = () => {

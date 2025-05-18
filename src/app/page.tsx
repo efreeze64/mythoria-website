@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import Footer from "@/assets/components/footer";
 
+import "@/assets/styling/global-style.css";
 import "./home.css";
 
 import logo from "@/assets/img/mythoria.png";
@@ -35,7 +36,6 @@ const Home = () => {
             </Link>
             <div className="dropdown-content">
               <Link href="/about">ABOUT US</Link>
-              <Link href="/facts">FACTS</Link>
               <Link href="/photo" target="_blank">
                 PHOTOS
               </Link>
@@ -98,9 +98,6 @@ const Home = () => {
           <ul className="mobile-navbar">
             <li>
               <Link href="/about">ABOUT US</Link>
-            </li>
-            <li>
-              <Link href="/facts">FACTS</Link>
             </li>
             <li>
               <Link href="/music"> MUSIC</Link>

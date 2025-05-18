@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 
+import "@/assets/styling/global-style.css";
 import "./socialmedia.css";
+
 import OpenLink from "@/assets/img/link.png";
 import Link from "next/link";
 
